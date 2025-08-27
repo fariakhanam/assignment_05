@@ -23,7 +23,7 @@
             <img class="h-6 ml-2" src="./assets/heart.png" alt="">
         </div>
         <div class="bg-[#41FF6B1A] w-[123px] h-[52px] rounded-3xl flex items-center justify-center ">
-            <span>100</span>
+            <span id="coin-count">100</span>
              <img class="h-6 ml-2" src="./assets/coin.png" alt="">
             </div>
         <div class="bg-[#00A63E] text-[#FFFFFF] w-[127px] h-[52px] rounded-3xl flex items-center justify-center"><p>
@@ -55,16 +55,16 @@
                     </div>
 
                         <div class="mt-4">
-                        <h1 class="font-bold text-lg" >National Emergency Number</h1>
+                        <h1 id="emergency_tittle" class="font-bold text-lg" >National Emergency Number</h1>
                         <p class="text-lg font-[400px] text-[#5C5C5C]">National Emergency</p>
                     </div>
                     <div class="mt-6">
-                        <h1 class="font-bold text-2xl">999</h1>
+                        <h1 id="emergency_num" class="font-bold text-2xl">999</h1>
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">All</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                          <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="emergency_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -77,16 +77,16 @@
                     </div>
 
                         <div class="mt-4">
-                        <h1 class="font-bold text-lg" >Police Helpline Number</h1>
+                        <h1 id="police_tittle" class="font-bold text-lg" >Police Helpline Number</h1>
                         <p class="text-lg font-[400px] text-[#5C5C5C]">Police</p>
                     </div>
                     <div class="mt-6">
-                        <h1 class="font-bold text-2xl">999</h1>
+                        <h1 id="police_num" class="font-bold text-2xl">999</h1>
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Police</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                          <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="police_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -99,16 +99,16 @@
                     </div>
 
                         <div class="mt-4">
-                        <h1 class="font-bold text-lg" >Fire Service Number</h1>
+                        <h1 id="fire_tittle" class="font-bold text-lg" >Fire Service Number</h1>
                         <p class="text-lg font-[400px] text-[#5C5C5C]">Fire Service</p>
                     </div>
                     <div class="mt-6">
-                        <h1 class="font-bold text-2xl">999</h1>
+                        <h1 id="fire_num" class="font-bold text-2xl">999</h1>
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Fire</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                          <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="fire_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -126,12 +126,9 @@
        
         </div>
 
-        <div class="flex justify-between items-center p-4 mt-4  bg-[#FAFAFA] rounded-xl">
-            <div>
-                <h2 class="font-bold text-lg">Fire Service Number</h2>
-                <p class="text-lg font-[400px] text-[#5C5C5C]">999</p>
-            </div>
-            <p>11:36:58 AM</p>
+        <div id="show_history">
+            
+
         </div>
 
     </div>
@@ -145,16 +142,16 @@
                     </div>
 
                         <div class="mt-4">
-                        <h1 class="font-bold text-lg" >Ambulance Service</h1>
+                        <h1 id="ambulance_tittle" class="font-bold text-lg" >Ambulance Service</h1>
                         <p class="text-lg font-[400px] text-[#5C5C5C]">Ambulance</p>
                     </div>
                     <div class="mt-6">
-                        <h1 class="font-bold text-2xl">1994-999999</h1>
+                        <h1 id="ambulance_num" class="font-bold text-2xl">1994-999999</h1>
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Health</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                          <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="ambulance_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -167,16 +164,16 @@
                     </div>
 
                         <div class="mt-4">
-                        <h1 class="font-bold text-lg" >Women & Child Helpline</h1>
+                        <h1 id="wc_tittle" class="font-bold text-lg" >Women & Child Helpline</h1>
                         <p class="text-lg font-[400px] text-[#5C5C5C]">Women & Child Helpline</p>
                     </div>
                     <div class="mt-6">
-                        <h1 class="font-bold text-2xl">109</h1>
+                        <h1 id="wc_num" class="font-bold text-2xl">109</h1>
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Help</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                          <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="wc_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -189,16 +186,16 @@
                     </div>
 
                         <div class="mt-4">
-                        <h1 class="font-bold text-lg" >Anti-Corruption Helpline</h1>
+                        <h1 id="anti_tittle" class="font-bold text-lg" >Anti-Corruption Helpline</h1>
                         <p class="text-lg font-[400px] text-[#5C5C5C]">Anti-Corruption</p>
                     </div>
                     <div class="mt-6">
-                        <h1 class="font-bold text-2xl">106</h1>
+                        <h1 id="anti_num" class="font-bold text-2xl">106</h1>
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Govt.</p>
                     </div>
                     <div class="flex gap-2 mt-6">
                          <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="anti_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
