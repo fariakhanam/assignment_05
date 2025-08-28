@@ -197,6 +197,13 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
     }
  })
 
+ document.getElementById('clear_all').addEventListener('click',function () {
+    
+    document.getElementById('show_history').innerHTML = ' ' 
+     array_ =[ ] 
+ })
+   
+
 
 
   
