@@ -27,7 +27,7 @@
              <img class="h-6 ml-2" src="./assets/coin.png" alt="">
             </div>
         <div class="bg-[#00A63E] text-[#FFFFFF] w-[127px] h-[52px] rounded-3xl flex items-center justify-center"><p>
-            <span>2</span>Copy
+            <span id="copy-count">0</span>Copy
         </p></div>
    
     </div>
@@ -63,8 +63,8 @@
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">All</p>
                     </div>
                     <div class="flex gap-2 mt-6">
-                         <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button id="emergency_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="copy_em" class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center hover:bg-gray-400"><i class="fa-solid fa-copy"></i>copy</button>
+                         <button id="emergency_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center hover:bg-[#00a63d7b]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -85,8 +85,8 @@
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Police</p>
                     </div>
                     <div class="flex gap-2 mt-6">
-                         <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button id="police_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="copy_police" class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center hover:bg-gray-400"><i class="fa-solid fa-copy"></i>copy</button>
+                         <button id="police_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center hover:bg-[#00a63d7b]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -107,8 +107,8 @@
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Fire</p>
                     </div>
                     <div class="flex gap-2 mt-6">
-                         <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button id="fire_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="copy_fire" class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center hover:bg-gray-400"><i class="fa-solid fa-copy"></i>copy</button>
+                         <button id="fire_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center hover:bg-[#00a63d7b]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -121,7 +121,7 @@
             <i class="fa-regular fa-clock"></i>
             <h2>Call History</h2>
         </div>
-        <div id="clear_all" class="bg-[#00A63E] text-[#FFFFFF] w-[127px] h-[52px] rounded-3xl flex items-center justify-center"><p>
+        <div id="clear_all" class="bg-[#00A63E] text-[#FFFFFF] w-[127px] h-[52px] rounded-3xl flex items-center justify-center hover:bg-[#00a63d7b]"><p>
             Clear </p></div>
        
         </div>
@@ -150,8 +150,8 @@
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Health</p>
                     </div>
                     <div class="flex gap-2 mt-6">
-                         <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button id="ambulance_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="copy_ambulance" class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center hover:bg-gray-400"><i class="fa-solid fa-copy"></i>copy</button>
+                         <button id="ambulance_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center hover:bg-[#00a63d7b]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -172,8 +172,8 @@
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Help</p>
                     </div>
                     <div class="flex gap-2 mt-6">
-                         <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button id="wc_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="copy_wc" class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center hover:bg-gray-400"><i class="fa-solid fa-copy"></i>copy</button>
+                         <button id="wc_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center hover:bg-[#00a63d7b]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>
@@ -194,8 +194,8 @@
                         <p class="bg-[#F2F2F2] text-[#5C5C5C] rounded-4xl w-[60px] p-2 text-center">Govt.</p>
                     </div>
                     <div class="flex gap-2 mt-6">
-                         <button class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center"><i class="fa-solid fa-copy"></i>copy</button>
-                         <button id="anti_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i>Call</button>
+                         <button id="copy_anti" class="border rounded-lg w-[182px] h-[40px] p-4 flex items-center justify-center hover:bg-gray-400"><i class="fa-solid fa-copy"></i>copy</button>
+                         <button id="anti_call" class=" rounded-lg w-[182px]  h-[40px] p-4 bg-[#00A63E] text-white flex items-center justify-center hover:bg-[#00a63d7b]"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 
                 </div>

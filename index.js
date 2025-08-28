@@ -7,13 +7,41 @@ function call_to_love()
   count = count + 1;                              
     loveCountEl.innerText = count; 
 }
+function copy_count()
+{
+    let copy_CountEl = document.getElementById('copy-count'); 
+  count = count + 1;                              
+    copy_CountEl.innerText = count;
+   
+}
+
+function copy_alert(id)
+{
+    let number_s =  document.getElementById (id).innerText
+     alert('number have copied : ' + number_s) 
+}
 
 function reduced_num()
 {       
    
        let coin_count = document.getElementById('coin-count')
    let coin_count_num = parseInt(coin_count.innerText)
-       let history_ = document.getElementById('show_history')
+
+       if(coin_count_num < 20 )
+    {
+        
+        alert('you have not enough coin for calling...')
+        return false;
+          
+    }
+    else{
+  
+
+        let reduced = coin_count_num  -  20 ;
+        coin_count.innerText = reduced;
+       
+        
+      let history_ = document.getElementById('show_history')
        history_.innerText =''
     for(let data of array_ )
     {
@@ -28,26 +56,25 @@ function reduced_num()
         </div>`
 
         history_.appendChild(div)
-
-   
     }
+     return true;
+}
    
 
     
 
-    if(coin_count_num >= 20 )
-    {
-        let reduced = coin_count_num  -  20 ;
-        coin_count.innerText = reduced;
-        return true;
-          
-    }
-    else{
 
-        alert('you have not enough coin for calling...')
-        return false;
-    }
 
+}  
+
+function copyText(id){
+  const t = document.createElement('textarea');
+  t.value = document.getElementById(id).innerText;
+  document.body.appendChild(t);
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+  
 }
 
 // --- love icon click section----
@@ -83,14 +110,18 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
      
     let service_name = document.getElementById('emergency_tittle').innerText
   let number_s =  document.getElementById ('emergency_num').innerText
-  let array_object = {
-    name:service_name,
-    num:number_s
-  }
-     array_.push(array_object)
+ 
+    
   if(reduced_num() === true)
 
     {
+         let array_object = {
+    name:service_name,
+    num:number_s
+  }
+        array_.push(array_object)
+        // reduced_num()
+
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
       
@@ -156,7 +187,8 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
     }
  })
 
-//  ----5----
+
+
  //  ----6-----
 
   document.getElementById('wc_call').addEventListener('click',function(){
@@ -201,6 +233,42 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
     
     document.getElementById('show_history').innerHTML = ' ' 
      array_ =[ ] 
+ })
+
+
+//  -----copy-----
+ document.getElementById('copy_em').addEventListener('click',function () {
+    copy_alert('emergency_num')
+    copy_count()
+    copyText('emergency_num')
+
+  
+ })
+ document.getElementById('copy_police').addEventListener('click',function () {
+     copy_alert('police_num')
+     copy_count()
+     copyText('police_num')
+ })
+ document.getElementById('copy_fire').addEventListener('click',function () {
+      
+    copy_alert('fire_num') 
+    copy_count()
+    copyText('fire_num')
+ })
+ document.getElementById('copy_ambulance').addEventListener('click',function () {
+    copy_alert('ambulance_num')
+    copy_count()
+    copyText('ambulance_num')
+ })
+ document.getElementById('copy_wc').addEventListener('click',function () {
+    copy_alert('wc_num')
+    copy_count()
+    copyText('wc_num')
+ })
+ document.getElementById('copy_anti').addEventListener('click',function () {
+    copy_alert('anti_num') 
+    copy_count()
+    copyText('anti_num')
  })
    
 
