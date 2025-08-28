@@ -39,8 +39,12 @@ function reduced_num()
 
         let reduced = coin_count_num  -  20 ;
         coin_count.innerText = reduced;
+        return true ;
+    }
+}
        
-        
+function history_update (){ 
+
       let history_ = document.getElementById('show_history')
        history_.innerText =''
     for(let data of array_ )
@@ -52,12 +56,12 @@ function reduced_num()
                 <h2 class="font-bold text-lg">${data.name}</h2>
                 <p class="text-lg font-[400px] text-[#5C5C5C]">${data.num}</p>
             </div>
-            <p>${new Date().toLocaleTimeString()}</p>
+            <p>${data.time}</p>
         </div>`
 
         history_.appendChild(div)
     }
-     return true;
+     
 }
    
 
@@ -65,7 +69,7 @@ function reduced_num()
 
 
 
-}  
+ 
 
 function copyText(id){
   const t = document.createElement('textarea');
@@ -117,11 +121,11 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
     {
          let array_object = {
     name:service_name,
-    num:number_s
+    num:number_s,
+    time:new Date().toLocaleTimeString()
   }
         array_.push(array_object)
-        // reduced_num()
-
+        history_update();
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
       
@@ -134,16 +138,18 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
       
     let service_name = document.getElementById('police_tittle').innerText
   let number_s =  document.getElementById ('police_num').innerText
- let array_object = {
-    name:service_name,
-    num:number_s
-  }
-     array_.push(array_object)
 
-    
-         if(reduced_num() === true)
+      
+  if(reduced_num() === true)
 
     {
+         let array_object = {
+    name:service_name,
+    num:number_s,
+    time:new Date().toLocaleTimeString()
+  }
+        array_.push(array_object)
+        history_update();
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
  })
@@ -154,15 +160,18 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
       
     let service_name = document.getElementById('fire_tittle').innerText
   let number_s =  document.getElementById ('fire_num').innerText
-   let array_object = {
-    name:service_name,
-    num:number_s
-  }
-     array_.push(array_object)
 
-      if(reduced_num() === true)
+      
+  if(reduced_num() === true)
 
     {
+         let array_object = {
+    name:service_name,
+    num:number_s,
+    time:new Date().toLocaleTimeString()
+  }
+        array_.push(array_object)
+        history_update();
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
  })
@@ -174,37 +183,41 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
     let service_name = document.getElementById('ambulance_tittle').innerText
   let number_s =  document.getElementById ('ambulance_num').innerText
 
-     let array_object = {
-    name:service_name,
-    num:number_s
-  }
-     array_.push(array_object)
-
-         if(reduced_num() === true)
+      
+  if(reduced_num() === true)
 
     {
+         let array_object = {
+    name:service_name,
+    num:number_s,
+    time:new Date().toLocaleTimeString()
+  }
+        array_.push(array_object)
+        history_update();
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
  })
 
 
 
- //  ----6-----
+ //  ----5-----
 
   document.getElementById('wc_call').addEventListener('click',function(){
       
     let service_name = document.getElementById('wc_tittle').innerText
   let number_s =  document.getElementById ('wc_num').innerText
-   let array_object = {
-    name:service_name,
-    num:number_s
-  }
-     array_.push(array_object)
 
     
-      if(reduced_num() === true)
+  if(reduced_num() === true)
 
     {
+         let array_object = {
+    name:service_name,
+    num:number_s,
+    time:new Date().toLocaleTimeString()
+  }
+        array_.push(array_object)
+        history_update();
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
  })
@@ -215,16 +228,18 @@ document.getElementById('Anti-Corruption_button').addEventListener('click', func
       
     let service_name = document.getElementById('anti_tittle').innerText
   let number_s =  document.getElementById ('anti_num').innerText
-   let array_object = {
-    name:service_name,
-    num:number_s
-  }
-     array_.push(array_object)
 
-    
-          if(reduced_num() === true)
+      
+  if(reduced_num() === true)
 
     {
+         let array_object = {
+    name:service_name,
+    num:number_s,
+    time:new Date().toLocaleTimeString()
+  }
+        array_.push(array_object)
+        history_update();
         alert('calling ' + service_name +' '+  number_s + ' ......' )
     }
  })
